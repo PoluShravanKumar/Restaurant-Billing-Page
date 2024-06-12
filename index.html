@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Billing System</h1>
+        <div id="menu"></div>
+        <button id="viewOrder">View Order</button>
+        <div id="orderSummary" style="display: none;">
+            <h2>Your Order</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price (₹)</th>
+                        <th>Total (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="total">
+                <span>Grand Total: </span><span id="grandTotal">0</span> ₹
+            </div>
+            <button id="payBill">Pay Bill</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
